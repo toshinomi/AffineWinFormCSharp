@@ -8,3 +8,4 @@
 言語：C# 
 
 メイン画面  
+![スクリーンショット](https://github.com/toshinomi/AffineWinForm/blob/master/AffineWinForm.png)
