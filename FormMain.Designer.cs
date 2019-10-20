@@ -44,6 +44,10 @@
             this.textBoxRotate = new System.Windows.Forms.TextBox();
             this.groupBoxImage = new System.Windows.Forms.GroupBox();
             this.pictureBox = new System.Windows.Forms.PictureBox();
+            this.lblTx = new System.Windows.Forms.Label();
+            this.lblTy = new System.Windows.Forms.Label();
+            this.lblSx = new System.Windows.Forms.Label();
+            this.lblSy = new System.Windows.Forms.Label();
             this.groupBoxOperation.SuspendLayout();
             this.groupBoxAffine.SuspendLayout();
             this.groupBoxTranslate.SuspendLayout();
@@ -132,6 +136,8 @@
             // 
             // groupBoxTranslate
             // 
+            this.groupBoxTranslate.Controls.Add(this.lblTy);
+            this.groupBoxTranslate.Controls.Add(this.lblTx);
             this.groupBoxTranslate.Controls.Add(this.textBoxTy);
             this.groupBoxTranslate.Controls.Add(this.textBoxTx);
             this.groupBoxTranslate.Location = new System.Drawing.Point(19, 26);
@@ -165,6 +171,8 @@
             // 
             // groupBoxScale
             // 
+            this.groupBoxScale.Controls.Add(this.lblSy);
+            this.groupBoxScale.Controls.Add(this.lblSx);
             this.groupBoxScale.Controls.Add(this.textBoxSy);
             this.groupBoxScale.Controls.Add(this.textBoxSx);
             this.groupBoxScale.Location = new System.Drawing.Point(19, 120);
@@ -241,6 +249,38 @@
             this.pictureBox.TabIndex = 3;
             this.pictureBox.TabStop = false;
             // 
+            // lblTx
+            // 
+            this.lblTx.Location = new System.Drawing.Point(6, 27);
+            this.lblTx.Name = "lblTx";
+            this.lblTx.Size = new System.Drawing.Size(21, 23);
+            this.lblTx.TabIndex = 6;
+            this.lblTx.Text = "X";
+            // 
+            // lblTy
+            // 
+            this.lblTy.Location = new System.Drawing.Point(6, 53);
+            this.lblTy.Name = "lblTy";
+            this.lblTy.Size = new System.Drawing.Size(21, 20);
+            this.lblTy.TabIndex = 7;
+            this.lblTy.Text = "Y";
+            // 
+            // lblSx
+            // 
+            this.lblSx.Location = new System.Drawing.Point(6, 27);
+            this.lblSx.Name = "lblSx";
+            this.lblSx.Size = new System.Drawing.Size(21, 23);
+            this.lblSx.TabIndex = 8;
+            this.lblSx.Text = "X";
+            // 
+            // lblSy
+            // 
+            this.lblSy.Location = new System.Drawing.Point(6, 53);
+            this.lblSy.Name = "lblSy";
+            this.lblSy.Size = new System.Drawing.Size(21, 23);
+            this.lblSy.TabIndex = 9;
+            this.lblSy.Text = "Y";
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
@@ -287,6 +327,10 @@
         private System.Windows.Forms.TextBox textBoxRotate;
         private System.Windows.Forms.GroupBox groupBoxAffine;
         private System.Windows.Forms.Button btnGo;
+        private System.Windows.Forms.Label lblTy;
+        private System.Windows.Forms.Label lblTx;
+        private System.Windows.Forms.Label lblSy;
+        private System.Windows.Forms.Label lblSx;
     }
 }
 
