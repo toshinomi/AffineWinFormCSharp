@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29409.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AffineWinForm", "AffineWinForm.csproj", "{A2922A81-F8FC-4C80-94B3-AEBE5ED04F3F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AffineWinFormCSharp", "AffineWinFormCSharp.csproj", "{A2922A81-F8FC-4C80-94B3-AEBE5ED04F3F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

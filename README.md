@@ -1,7 +1,7 @@
-# AffineWinForm
+# AffineWinFormCSharp
 
 # 概要
-【 AffineWinForm 】  
+【 AffineWinFormCSharp 】  
 画像処理のアフィン変換アルゴリズムの Windows Form アプリケーションです。  
 デザインはフラットデザインにしています。  
 
@@ -9,4 +9,4 @@
 言語：C# 
 
 メイン画面  
-![スクリーンショット](https://github.com/toshinomi/AffineWinForm/blob/master/AffineWinForm.png)
+![スクリーンショット](https://github.com/toshinomi/AffineWinFormCSharpblob/master/AffineWinFormCSharp.png)
