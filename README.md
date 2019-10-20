@@ -9,4 +9,4 @@
 言語：C# 
 
 メイン画面  
-![スクリーンショット](https://github.com/toshinomi/AffineWinFormCSharpblob/master/AffineWinFormCSharp.png)
+![スクリーンショット](https://github.com/toshinomi/AffineWinFormCSharp/blob/master/AffineWinFormCSharp.png)
