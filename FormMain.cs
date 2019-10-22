@@ -153,7 +153,7 @@ namespace AffineWinForm
                     e.Handled = true;
                     return;
                 }
-                if (CountChar(textbox.Text, '.') >= 1)
+                if (CountChar(textbox.Text, ".") >= 1)
                 {
                     e.Handled = true;
                     return;
@@ -177,7 +177,7 @@ namespace AffineWinForm
                     e.Handled = true;
                     return;
                 }
-                if (CountChar(textbox.Text, '.') >= 1)
+                if (CountChar(textbox.Text, ".") >= 1)
                 {
                     e.Handled = true;
                     return;
@@ -191,9 +191,9 @@ namespace AffineWinForm
             return;
         }
 
-        public int CountChar(string _str, char _char)
+        public int CountChar(string _str, string _strChar)
         {
-            return _str.Length - _str.Replace(_char.ToString(), "").Length;
+            return _str.Length - _str.Replace(_strChar, "").Length;
         }
     }
 
