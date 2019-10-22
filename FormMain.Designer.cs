@@ -35,19 +35,20 @@
             this.groupBoxAffine = new System.Windows.Forms.GroupBox();
             this.btnGo = new System.Windows.Forms.Button();
             this.groupBoxTranslate = new System.Windows.Forms.GroupBox();
+            this.lblTy = new System.Windows.Forms.Label();
+            this.lblTx = new System.Windows.Forms.Label();
             this.textBoxTy = new System.Windows.Forms.TextBox();
             this.textBoxTx = new System.Windows.Forms.TextBox();
             this.groupBoxScale = new System.Windows.Forms.GroupBox();
+            this.lblSy = new System.Windows.Forms.Label();
+            this.lblSx = new System.Windows.Forms.Label();
             this.textBoxSy = new System.Windows.Forms.TextBox();
             this.textBoxSx = new System.Windows.Forms.TextBox();
             this.groupBoxRotate = new System.Windows.Forms.GroupBox();
             this.textBoxRotate = new System.Windows.Forms.TextBox();
             this.groupBoxImage = new System.Windows.Forms.GroupBox();
             this.pictureBox = new System.Windows.Forms.PictureBox();
-            this.lblTx = new System.Windows.Forms.Label();
-            this.lblTy = new System.Windows.Forms.Label();
-            this.lblSx = new System.Windows.Forms.Label();
-            this.lblSy = new System.Windows.Forms.Label();
+            this.lblTitle = new System.Windows.Forms.Label();
             this.groupBoxOperation.SuspendLayout();
             this.groupBoxAffine.SuspendLayout();
             this.groupBoxTranslate.SuspendLayout();
@@ -64,7 +65,7 @@
             this.groupBoxOperation.Controls.Add(this.btnFileSelect);
             this.groupBoxOperation.Controls.Add(this.groupBoxAffine);
             this.groupBoxOperation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBoxOperation.Location = new System.Drawing.Point(15, 8);
+            this.groupBoxOperation.Location = new System.Drawing.Point(15, 36);
             this.groupBoxOperation.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.groupBoxOperation.Name = "groupBoxOperation";
             this.groupBoxOperation.Padding = new System.Windows.Forms.Padding(6, 5, 6, 5);
@@ -147,6 +148,22 @@
             this.groupBoxTranslate.TabStop = false;
             this.groupBoxTranslate.Text = "Translate";
             // 
+            // lblTy
+            // 
+            this.lblTy.Location = new System.Drawing.Point(6, 53);
+            this.lblTy.Name = "lblTy";
+            this.lblTy.Size = new System.Drawing.Size(21, 20);
+            this.lblTy.TabIndex = 7;
+            this.lblTy.Text = "Y";
+            // 
+            // lblTx
+            // 
+            this.lblTx.Location = new System.Drawing.Point(6, 27);
+            this.lblTx.Name = "lblTx";
+            this.lblTx.Size = new System.Drawing.Size(21, 23);
+            this.lblTx.TabIndex = 6;
+            this.lblTx.Text = "X";
+            // 
             // textBoxTy
             // 
             this.textBoxTy.BackColor = System.Drawing.Color.White;
@@ -181,6 +198,22 @@
             this.groupBoxScale.TabIndex = 6;
             this.groupBoxScale.TabStop = false;
             this.groupBoxScale.Text = "Scale";
+            // 
+            // lblSy
+            // 
+            this.lblSy.Location = new System.Drawing.Point(6, 53);
+            this.lblSy.Name = "lblSy";
+            this.lblSy.Size = new System.Drawing.Size(21, 23);
+            this.lblSy.TabIndex = 9;
+            this.lblSy.Text = "Y";
+            // 
+            // lblSx
+            // 
+            this.lblSx.Location = new System.Drawing.Point(6, 27);
+            this.lblSx.Name = "lblSx";
+            this.lblSx.Size = new System.Drawing.Size(21, 23);
+            this.lblSx.TabIndex = 8;
+            this.lblSx.Text = "X";
             // 
             // textBoxSy
             // 
@@ -231,7 +264,7 @@
             // 
             this.groupBoxImage.Controls.Add(this.pictureBox);
             this.groupBoxImage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBoxImage.Location = new System.Drawing.Point(267, 8);
+            this.groupBoxImage.Location = new System.Drawing.Point(267, 36);
             this.groupBoxImage.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.groupBoxImage.Name = "groupBoxImage";
             this.groupBoxImage.Padding = new System.Windows.Forms.Padding(6, 5, 6, 5);
@@ -249,45 +282,24 @@
             this.pictureBox.TabIndex = 3;
             this.pictureBox.TabStop = false;
             // 
-            // lblTx
+            // lblTitle
             // 
-            this.lblTx.Location = new System.Drawing.Point(6, 27);
-            this.lblTx.Name = "lblTx";
-            this.lblTx.Size = new System.Drawing.Size(21, 23);
-            this.lblTx.TabIndex = 6;
-            this.lblTx.Text = "X";
-            // 
-            // lblTy
-            // 
-            this.lblTy.Location = new System.Drawing.Point(6, 53);
-            this.lblTy.Name = "lblTy";
-            this.lblTy.Size = new System.Drawing.Size(21, 20);
-            this.lblTy.TabIndex = 7;
-            this.lblTy.Text = "Y";
-            // 
-            // lblSx
-            // 
-            this.lblSx.Location = new System.Drawing.Point(6, 27);
-            this.lblSx.Name = "lblSx";
-            this.lblSx.Size = new System.Drawing.Size(21, 23);
-            this.lblSx.TabIndex = 8;
-            this.lblSx.Text = "X";
-            // 
-            // lblSy
-            // 
-            this.lblSy.Location = new System.Drawing.Point(6, 53);
-            this.lblSy.Name = "lblSy";
-            this.lblSy.Size = new System.Drawing.Size(21, 23);
-            this.lblSy.TabIndex = 9;
-            this.lblSy.Text = "Y";
+            this.lblTitle.BackColor = System.Drawing.Color.Black;
+            this.lblTitle.ForeColor = System.Drawing.Color.White;
+            this.lblTitle.Location = new System.Drawing.Point(2, 2);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(847, 29);
+            this.lblTitle.TabIndex = 4;
+            this.lblTitle.Text = "Affine";
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(850, 600);
+            this.ClientSize = new System.Drawing.Size(850, 625);
             this.ControlBox = false;
+            this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.groupBoxImage);
             this.Controls.Add(this.groupBoxOperation);
             this.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
@@ -331,6 +343,7 @@
         private System.Windows.Forms.Label lblTx;
         private System.Windows.Forms.Label lblSy;
         private System.Windows.Forms.Label lblSx;
+        private System.Windows.Forms.Label lblTitle;
     }
 }
 
