@@ -80,7 +80,7 @@ namespace AffineWinForm
                 return;
             }
 
-            AffineInfo affineInfo = new AffineInfo();
+            CAffineInfo affineInfo = new CAffineInfo();
             if (!IsEmpty(textBoxTx.Text))
             {
                 affineInfo.Translate.Tx = float.Parse(textBoxTx.Text);
@@ -118,7 +118,7 @@ namespace AffineWinForm
             return bIsEmpty;
         }
 
-        public Image Affine(AffineInfo _affineInfo)
+        public Image Affine(CAffineInfo _affineInfo)
         {
             float fTx = _affineInfo.Translate.Tx;
             float fTy = _affineInfo.Translate.Ty;
@@ -197,41 +197,41 @@ namespace AffineWinForm
         }
     }
 
-    public class AffineInfo
+    public class CAffineInfo
     {
-        private Translate m_translate;
-        private Scale m_scale;
-        private Rotate m_rotate;
+        private CTranslate m_translate;
+        private CScale m_scale;
+        private CRotate m_rotate;
 
-        public Translate Translate
+        public CTranslate Translate
         {
             set {m_translate = value; }
             get { return m_translate; }
         }
-        public Scale Scale
+        public CScale Scale
         {
             set { m_scale = value; }
             get { return m_scale; }
         }
-        public Rotate Rotate
+        public CRotate Rotate
         {
             set { m_rotate = value; }
             get { return m_rotate; }
         }
 
-        public AffineInfo()
+        public CAffineInfo()
         {
-            m_translate = new Translate();
-            m_scale = new Scale();
-            m_rotate = new Rotate();
+            m_translate = new CTranslate();
+            m_scale = new CScale();
+            m_rotate = new CRotate();
         }
 
-        ~AffineInfo()
+        ~CAffineInfo()
         {
         }
     }
 
-    public class Translate
+    public class CTranslate
     {
         private float m_fTx;
         private float m_fTy;
@@ -246,18 +246,18 @@ namespace AffineWinForm
             set { m_fTy = value; }
             get { return m_fTy; }
         }
-        public Translate()
+        public CTranslate()
         {
             m_fTx = 0F;
             m_fTy = 0F;
         }
 
-        ~Translate()
+        ~CTranslate()
         {
         }
     }
 
-    public class Scale
+    public class CScale
     {
         private float m_fSx;
         private float m_fSy;
@@ -284,18 +284,18 @@ namespace AffineWinForm
             }
             get { return m_fSy; }
         }
-        public Scale()
+        public CScale()
         {
             m_fSx = 1F;
             m_fSy = 1F;
         }
 
-        ~Scale()
+        ~CScale()
         {
         }
     }
 
-    public class Rotate
+    public class CRotate
     {
         private float m_angle;
 
@@ -304,12 +304,12 @@ namespace AffineWinForm
             set { m_angle = value; }
             get { return m_angle; }
         }
-        public Rotate()
+        public CRotate()
         {
             m_angle = 0F;
         }
 
-        ~Rotate()
+        ~CRotate()
         {
         }
     }
