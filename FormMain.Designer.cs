@@ -81,7 +81,7 @@
             this.btnInit.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.btnInit.Name = "btnInit";
             this.btnInit.Size = new System.Drawing.Size(150, 50);
-            this.btnInit.TabIndex = 3;
+            this.btnInit.TabIndex = 2;
             this.btnInit.Text = "Init";
             this.btnInit.UseVisualStyleBackColor = true;
             this.btnInit.Click += new System.EventHandler(this.OnClickBtnInit);
@@ -93,7 +93,7 @@
             this.btnClose.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(150, 50);
-            this.btnClose.TabIndex = 4;
+            this.btnClose.TabIndex = 3;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.OnClickBtnClose);
@@ -105,7 +105,7 @@
             this.btnFileSelect.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.btnFileSelect.Name = "btnFileSelect";
             this.btnFileSelect.Size = new System.Drawing.Size(150, 50);
-            this.btnFileSelect.TabIndex = 2;
+            this.btnFileSelect.TabIndex = 1;
             this.btnFileSelect.Text = "File Select...";
             this.btnFileSelect.UseVisualStyleBackColor = true;
             this.btnFileSelect.Click += new System.EventHandler(this.OnClickBtnFileSelect);
