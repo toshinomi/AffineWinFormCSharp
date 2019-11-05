@@ -307,8 +307,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "FormMain";
-            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.OnMouseDownFormMain);
-            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.OnMouseMoveFormMain);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.OnMouseDownLblTitle);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.OnMouseMoveLblTitle);
             this.groupBoxOperation.ResumeLayout(false);
             this.groupBoxAffine.ResumeLayout(false);
             this.groupBoxTranslate.ResumeLayout(false);
