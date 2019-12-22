@@ -269,7 +269,7 @@ namespace AffineWinForm
         private CRotate m_rotate;
 
         /// <summary>
-        /// 移動
+        /// 移動情報
         /// </summary>
         public CTranslate Translate
         {
@@ -278,7 +278,7 @@ namespace AffineWinForm
         }
 
         /// <summary>
-        /// 拡大・縮小
+        /// 拡大・縮小情報
         /// </summary>
         public CScale Scale
         {
@@ -287,7 +287,7 @@ namespace AffineWinForm
         }
 
         /// <summary>
-        /// 回転
+        /// 回転情報
         /// </summary>
         public CRotate Rotate
         {
